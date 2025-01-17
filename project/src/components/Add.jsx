@@ -18,10 +18,10 @@ const handleSubmit = (e)=>{
 
     return(
         <form onSubmit={handleSubmit} >
-            <input type="number" name="rollNo" id="rollNo" value={rollNo} onChange={(e)=>setRollNo(e.target.value)}/>
-            <input type="text" name="name" id="name" value={name} onChange={(e)=>setName(e.target.value)} />
-            <input type="text" name="course" id="course" value={course} onChange={(e)=>setCourse(e.target.value)} />
-            <input type="email" name="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <input type="number" name="rollNo" id="rollNo" value={rollNo} placeholder="Rollno" onChange={(e)=>setRollNo(e.target.value)}/>
+            <input type="text" name="name" id="name" value={name} placeholder="name" onChange={(e)=>setName(e.target.value)} />
+            <input type="text" name="course" id="course" value={course} placeholder="course" onChange={(e)=>setCourse(e.target.value)} />
+            <input type="email" name="email" id="email" value={email} placeholder="email" onChange={(e)=>setEmail(e.target.value)} />
             <input type="submit" value='Add' className="btn btn-primary" />
         </form>
     )
